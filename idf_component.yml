@@ -1,6 +1,6 @@
 url: "https://github.com/brianiq/BrianIQ-UartPeerY-cpp"
 repository: "https://github.com/brianiq/BrianIQ-UartPeerY-cpp.git"
-version: "1.2.0"
+version: "1.2.2"
 maintainers: 
         - "BRIAN QAMARDEEN <brian@qbqetell.me>"
 description: "Remote UART peer C++ programming object model"
