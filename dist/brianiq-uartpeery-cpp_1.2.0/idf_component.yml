@@ -1,0 +1,10 @@
+version: 1.2.0
+maintainers:
+- BRIAN QAMARDEEN <brian@qbqetell.me>
+description: Remote UART peer C++ programming object model
+license: MIT
+dependencies:
+  idf:
+    version: '>=6.0'
+url: https://github.com/brianiq/BrianIQ-UartPeerY-cpp
+repository: https://github.com/brianiq/BrianIQ-UartPeerY-cpp.git
