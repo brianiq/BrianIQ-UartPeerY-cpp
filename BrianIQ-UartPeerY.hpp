@@ -5,8 +5,9 @@
 #include <string>
 #include <vector>
 
-namespace BrianIQ {
-class UartPeerY {
+namespace
+        BrianIQ {
+class   UartPeerY {
         /***1***/
         public:
         uint8_t  U;
@@ -28,8 +29,8 @@ class UartPeerY {
                 uint64_t BaudRate, uint64_t TxBufferSize, uint64_t RxBufferSize
         );
         int8_t dnit ();
-        int8_t s (std::string &E, std::vector<uint8_t> &S);
-        int8_t r (std::string &E, std::vector<uint8_t> &Y, uint64_t S, uint64_t T);
+        int8_t wrtt (std::string &E, std::vector<uint8_t> &S);
+        int8_t read (std::string &E, std::vector<uint8_t> &Y, uint64_t S, uint64_t T);
 };
 }
 #endif

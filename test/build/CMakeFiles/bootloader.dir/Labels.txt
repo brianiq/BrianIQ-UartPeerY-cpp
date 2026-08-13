@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/CMakeFiles/bootloader
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/CMakeFiles/bootloader.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/CMakeFiles/bootloader-complete.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/qbrian/Documents/05-Prsn/Program/BrianIQ-UartPeerY-cpp/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

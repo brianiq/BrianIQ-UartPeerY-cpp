@@ -8,10 +8,10 @@
 #include <stdexcept>
 #include <vector>
 
-namespace BrianIQ {
-class UartPeerY {
-        UartPeerY:: UartPeerY () { I  = 0; }
-        UartPeerY::~UartPeerY () { dnit(); }
+namespace
+        BrianIQ {
+        UartPeerY:: UartPeerY () { }
+        UartPeerY::~UartPeerY () { dnit (); }
         int8_t  UartPeerY::init (std::string &E, uint8_t UartHardwareDriver, uint8_t TXPin,
                 uint8_t RXPin, uint8_t RTSPin, uint8_t DataSize, uint8_t ParityBit,
                 uint8_t StopBit, uint64_t BaudRate, uint64_t TxBufferSize, uint64_t RxBufferSize) {
@@ -117,21 +117,23 @@ class UartPeerY {
                 if (AF60 != ESP_OK) {
                         E = std::string ("Interface conf set failed, 'rx_timeout' [") + esp_err_to_name(AF60) + std::string ("]");
                         return -13;
-                }                
+                }
                 uart_set_always_rx_timeout (AE01, true);
                 I = 1;
+                return 0;
         }
         int8_t  UartPeerY::dnit () {
-                if (I == 0) { return; }
+                if (I == 0) { return 0; }
                 uart_port_t           AE01 = UART_NUM_2;
                 if        (U == 0 ) { AE01 = UART_NUM_0;
                 } else if (U == 1 ) { AE01 = UART_NUM_1;
                 } else if (U == 2 ) { AE01 = UART_NUM_2;
                 }
                 uart_driver_delete (AE01);
-                I == 0;
+                I = 0;
+                return 0;
         }
-        int8_t  UartPeerY::s (std::string &E, std::vector<uint8_t> &S) { /*
+        int8_t  UartPeerY::wrtt (std::string &E, std::vector<uint8_t> &S) { /*
                 E: Errr note
                 D: Seed data
                 RETURN:
@@ -154,7 +156,7 @@ class UartPeerY {
                 }
                 return  0;
         }
-        int8_t  UartPeerY::r (std::string &E, std::vector<uint8_t> &Y, uint64_t Z, uint64_t T) { /*
+        int8_t  UartPeerY::read (std::string &E, std::vector<uint8_t> &Y, uint64_t Z, uint64_t T) { /*
                 E: Errr note
                 Y: Read data (Yield)
                 Z: Read data size
@@ -201,5 +203,4 @@ class UartPeerY {
                         if( BE25 > T) { return 1; }
                 }
         }
-}
 }
